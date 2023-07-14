@@ -29,15 +29,15 @@ Under create a new application, choose “Freestanding” as application type an
 
 1. Connect the nRF52840 dongle to your USB port
 2. Put the dongle into DFU / bootloader mode by pressing the reset button
-   ![](images/2A_dongle_reset.png)
-3. The dongle is in DFU mode when LD2 (LED 2) pulses red.
+   <br> ![](images/2A_dongle_reset.png)
+4. The dongle is in DFU mode when LD2 (LED 2) pulses red.
 
 ### Step 5: Flash the nRF52840 Dongle
 > **Note**
 > We will flash the nRF52840 dongle using the nRF Programmer app, you can also use the command line with nrfutil.
 
 1. Open nRF Connect for Desktop, open nRF Programmer
-2. Select Device: The dongle should enumerate as Open DFU Bootloader when in DFU mode
+2. Select Device: The dongle should enumerate as **Open DFU Bootloader** when in DFU mode
 3. Add the compiled Thread RCP firmware found under: **\build\zephyr\zephyr.hex**
 4. Hit write to perform the flash process
 5. Verify the progress through the nRF Programmer log. The device will automatically reset upon successful flash.
