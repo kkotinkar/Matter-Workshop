@@ -1,4 +1,6 @@
 # Chapter 2A - Setup of a Thread RCP
+> **Note**
+> For Matter over WiFi projects, the Thread Border Router und thus Thread RCP is not needed. Chapter 2 can be skipped.
 
 A Thread Radio Co Processor will be needed as Thread radio front end / dongle if the host hardware does not support Thread natively (this is the case for a Raspberry Pi or typical Linux x86 machines).<br>
 
