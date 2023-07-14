@@ -2,7 +2,7 @@
 > **Warning**
 > Ensure to use a 64 Bit OS for the Raspberry Pi 4. This will allow you to use the pre-compiled Matter controller later on.
 
-We will setup the OTBR on a Raspberry Pi 4, using a 64 Bit OS. You may use an Ubuntu Server OS (20.04) or the Raspberry Pi OS.
+We will setup the OTBR on a Raspberry Pi 4, using the 64 Bit Raspberry Pi OS. You may also use an Ubuntu Server image (20.04) if preferred. The selection of the OS may have dependencies when selecting pre-compiled tools such as the Matter controller.
 
 ### Step 1: Setup the Raspberry Pi and enable WiFi connectivity (+optionally SSH access)
 
@@ -64,3 +64,27 @@ sudo service otbr-agent status
 
 > **Note**
 > It is expected that the service has exited and is auto-restarting/activating. This is due to no Thread Radio Front End being present (unless the Thread RCP dongle has been plugged in already).
+
+### Step 8: Modify the UART baudrate for the Thread RCP
+Assuming the nRF52840 dongle enumerates as ACM0, edit the following file
+```
+sudo nano /etc/default/otbr-agent
+```
+
+Edit the line to include **?uart-baudrate=1000000**
+```
+spinel+hdlc+uart:///dev/ttyACM0?uart-baudrate=1000000
+```
+
+### Step 9: Restart the OTBR Service
+```
+sudo service otbr-agent restart
+```
+
+### Step 10: Verify that OTBR is now in status active (running)
+
+```
+sudo service otbr-agent status
+```
+
+![](images/2B_OTBR_running.PNG)
