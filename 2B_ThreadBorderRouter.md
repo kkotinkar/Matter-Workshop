@@ -75,13 +75,16 @@ Edit the line to include **?uart-baudrate=1000000**
 ```
 spinel+hdlc+uart:///dev/ttyACM0?uart-baudrate=1000000
 ```
+### Step 9: Connect the nRF52840 dongle as Thread RCP
 
-### Step 9: Restart the OTBR Service
+Insert the nRF52840 dongle to one of your Raspberry Pi's USB ports.
+
+### Step 10: Restart the OTBR Service
 ```
 sudo service otbr-agent restart
 ```
 
-### Step 10: Verify that OTBR is now in status active (running)
+### Step 11: Verify that OTBR is now in status active (running)
 
 ```
 sudo service otbr-agent status
