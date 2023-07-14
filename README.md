@@ -30,4 +30,4 @@ We will follow the guided, and automated installation through nRF Connect for De
 
 **Step 5**: Run VS Code and **perform the Quick Setup on the nRF Connect extension**. Select the nRF Connect SDK and toolchain that matches your setup.
 
-## Chapter 1 - Matter End Device (e.g. Nordic DK as Matter Light Bulb)
+## [Chapter 1 - Matter End Device (e.g. Nordic DK as Matter Light Bulb)](./1_Matter_End_Device.md)
