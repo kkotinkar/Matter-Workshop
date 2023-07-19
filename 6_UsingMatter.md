@@ -5,7 +5,7 @@ Data & information is stored in so called application clusters. Access and contr
 
 ### Step 1: Control the end device's application cluster locally
 
-With the Matter Light bulb sample application running on the nRF52840-DK (see [Chapter 1 - Matter End Device (e.g. Nordic DK as Matter Light Bulb)](./1_Matter_End_Device.md) on how to flash the Matter sample application.),
+With the Matter Light bulb sample application running on the Nordic DK (see [Chapter 1 - Matter End Device (Nordic DK as Matter Light Bulb)](./1_Matter_End_Device.md) on how to flash the Matter sample application.),
 you can control (here toggle) the OnOff cluster using the DK's button 2. This will essentially toggle the LED 2 on the nRF52840 DK that represents our light bulb.
 
 Verify:

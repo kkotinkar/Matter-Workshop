@@ -1,6 +1,6 @@
 # Chapter 2B - Setup of the OpenThread Border Router (OTBR)
 > **Warning**
-> Ensure to use a 64 Bit OS for the Raspberry Pi 4. This will allow you to use the pre-compiled Matter controller later on.
+> Ensure to use a 64 Bit OS for the Raspberry Pi. This will allow you to use the pre-compiled Matter controller later on.
 
 We will setup the OTBR on a Raspberry Pi 4, using the 64 Bit Raspberry Pi OS. You may also use an Ubuntu Server image (20.04) if preferred. The selection of the OS may have dependencies when selecting pre-compiled tools such as the Matter controller.
 
@@ -30,7 +30,10 @@ git clone https://github.com/openthread/ot-br-posix.git --depth 1
 
 ### Step 4: Adjust the cloned repository
 
-Following the Nordic documentation, make sure to check out the compatible commit id after cloning the repository.
+Following the Nordic documentation, make sure to check out the compatible commit id after cloning the repository. This specific commit tag has been tested as part of Nordic's nRF Connect SDK CI/CD testing process. It has been verified to work.
+
+> **Note**
+> You may use the OTBR main branch / latest software release, but keep in mind that the version has not been tested by Nordic.
 
 ```
 cd ot-br-posix
@@ -77,9 +80,9 @@ spinel+hdlc+uart:///dev/ttyACM0?uart-baudrate=1000000
 ```
 ### Step 9: Connect the nRF52840 dongle as Thread RCP
 
-Insert the nRF52840 dongle to one of your Raspberry Pi's USB ports.
+Connect the nRF52840 dongle to one of your Raspberry Pi's USB ports.
 
-### Step 10: Restart the OTBR Service
+### Step 10: Restart the OTBR service
 ```
 sudo service otbr-agent restart
 ```
@@ -91,3 +94,6 @@ sudo service otbr-agent status
 ```
 
 ![](images/2B_OTBR_running.PNG)
+
+## Next Chapter
+Switch to [Chapter 3 - Setup of the Matter Controller](./3_MatterController.md)

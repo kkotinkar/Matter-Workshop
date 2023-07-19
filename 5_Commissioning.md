@@ -37,7 +37,7 @@ The fairly hidden message **Device commissioning completed with success** will i
 
 ### Step 4: Verify Thread state on the Matter end device
 
-You can verify the thread network interface and the state on the end device (nRF52840 DK) with the following commands:
+You can verify the Thread network interface and the state of the end device (here, nRF52840 DK) with the following commands:
 
 ```
 ot ifconfig
@@ -52,3 +52,6 @@ You may also use
 ot help
 ```
 for further guidance on possible CLI commands on the Matter over Thread end device.
+
+## Next Chapter
+Switch to [Chapter 6 - Using the Matter Controller](./6_UsingMatter.md)

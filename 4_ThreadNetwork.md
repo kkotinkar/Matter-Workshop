@@ -1,7 +1,7 @@
-# Chapter 4 - Running the OTBR to form a Thread network
+# Chapter 4 - Running the OTBR to create a Thread network
 
-Running the OTBR to form a Thread network, e.g. to build the underlying layer for Matter over Thread end devices. <br> 
-For Matter over WiFi use cases, this chapter can be skipped. <br>
+Running the OTBR to create a Thread network, e.g. to build the underlying layer for Matter over Thread operation. <br> 
+For Matter over WiFi applications, this chapter can be skipped. <br>
 
 We are using the OTBR command line interface (ot-ctl commands).
 
@@ -58,3 +58,6 @@ List the active dataset in HEX format, save the output.
 ```
 sudo ot-ctl dataset active -x
 ```
+
+## Next Chapter
+Switch to [Chapter 5 - Commissioning the End Device](./5_Commissioning.md)

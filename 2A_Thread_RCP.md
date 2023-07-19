@@ -46,3 +46,6 @@ Under create a new application, choose “Freestanding” as application type an
 6. The device should now enumerate as ***Thread Co-Processor***
 
 ![](images/2A_flash_complete.png)
+
+## Next Chapter
+Switch to [Chapter 2B - Setup of the OpenThread Border Router (OTBR)](./2B_ThreadBorderRouter.md)

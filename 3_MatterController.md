@@ -8,7 +8,7 @@ At the release of almost every nRF Connect SDK version, Nordic also publishes a 
 You can find an overview of pre-compiled Matter controllers under [Nordic's GitHub](https://github.com/nrfconnect/sdk-connectedhomeip/releases/)
 
 > **Note**
-> The precompiled Matter controller is the reason why we needed to choose a specific OS and bit length for the Raspberry Pi. If you are building the Matter controller from source, you are more flexible in selecting the OS.
+> The precompiled Matter controller is the reason why we needed to choose a specific OS for the Raspberry Pi. If you are building the Matter controller from source, you are more flexible in selecting the OS.
 
 ### Step 1: Download pre-compiled Matter Controller
 We will download the pre-compiled Matter controller for ARM architecture, Linux 64 Bit Operating systems.
@@ -39,4 +39,7 @@ Run the chip tool interactively (does not exit after initial call) with its shel
 ./chip-tool-debug interactive start
 ```
 
-Further information can be found in the [documentation](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/2.3.0/matter/chip_tool_guide.html#supported-commands-and-options).
+Further information can be found in the CHIP tool [documentation](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/2.3.0/matter/chip_tool_guide.html#supported-commands-and-options) on supported commands.
+
+## Next Chapter
+Switch to [Chapter 4 - Running the OTBR to create a Thread network](./4_ThreadNetwork.md)
